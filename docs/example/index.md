@@ -175,7 +175,7 @@ proxy-groups:
   - {name: 自动选择, include-all-providers: true, tolerance: 10, type: url-test}
 
 rules:
-  # - AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(NOT,((GEOSITE,cn))),REJECT # quic
+  # - AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(NOT,((GEOSITE,cn,no-resolve))),REJECT # quic
  
   - GEOSITE,biliintl, 哔哩东南亚
   - GEOSITE,ehentai,ehentai
